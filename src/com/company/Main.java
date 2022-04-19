@@ -4,10 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 	// Задание 1
-        int[] massiveOne = new int[3];
-        massiveOne[0] = 1;
-        massiveOne[1] = 2;
-        massiveOne[2] = 3;
+        int[] massiveOne = new int[] {1, 2, 3};
 
         double[] massiveTwo = {1.57, 7.654, 9.986};
 
@@ -24,5 +21,13 @@ public class Main {
         System.out.println(massiveThree[5] + ", " + massiveThree[4] + ", " + massiveThree[3] + ", " + massiveThree[2] + ", " + massiveThree[1] + ", " + massiveThree[0]);
 
         // Задание 4
+        for (int i = 0; i < massiveOne.length; i++) {
+            if (massiveOne[i] % 2 != 0) {
+                massiveOne[i] = massiveOne[i] + 1;
+            } else if (massiveOne[i] % 2 == 0) {
+                massiveOne[i] = massiveOne[i];
+            }
+            System.out.print(massiveOne[i] + ", ");
+        }
     }
 }
